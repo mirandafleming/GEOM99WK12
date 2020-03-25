@@ -26,7 +26,7 @@
         center: [-100.0, 50.0]
     });
     // Modify this to place your own map service URL here. Show one or more provinces--do not just show Ontario like this example. 
-    var url = 'https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/mgillilaCanadaPro/MapServer/query?where=PRNAME%3D%27NewBrunswick%27%26PRNAME%3D%27Yukon%27&returnGeometry=true&returnTrueCurves=false&returnExtentOnly=false&f=geojson';
+    var url = 'https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/mgillilaCanadaPro/MapServer/query?where=PRNAME%3D%27Yukon%27&returnGeometry=true&returnTrueCurves=false&returnExtentOnly=false&f=geojson';
     map.on('load', function() {
         window.setInterval(function() {
             map.getSource('canada').setData(url);
