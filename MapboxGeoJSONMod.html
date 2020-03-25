@@ -29,7 +29,7 @@
 	
     // Tried to query two provinces to display, had great difficulty finding documentation on the use of OR.
     // query?where=%28PRNAME%3D%27Yukon%27%28OR%29PRNAME%3D%27Alberta%27%29 
-    var url = 'https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/mgillilaCanadaPro/MapServer/0/query?where=%28PRNAME%3D%27Yukon%27%28OR%29PRNAME%3D%27Alberta%27%29&returnGeometry=true&returnTrueCurves=false&returnExtentOnly=false&f=geojson';
+    var url = 'https://luna.flemingcollege.ca/arcgis/rest/services/Geom99on/mgillilaCanadaPro/MapServer/0/query?where=PRNAME%3D%27Yukon%27&returnGeometry=true&returnTrueCurves=false&returnExtentOnly=false&f=geojson';
     map.on('load', function() {
         window.setInterval(function() {
             map.getSource('canada').setData(url);
